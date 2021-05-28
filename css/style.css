@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #2A265F;
+    background-color: #28223F;
     color: #000000;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -18,6 +18,8 @@ body{
 a{
     text-decoration: none;
 }
+/* Header */
+
 /* Navigation */
 nav {
     background-color: #ddd;
@@ -33,7 +35,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#2A265F;
+    color:#28223F;
 }
 #square{
     font-size: 18px;
@@ -63,7 +65,7 @@ nav p{
     outline: none;
     height: 30px;
     width: 30px;
-    background-color: #2A265F;
+    background-color: #28223F;
 }
 .menu:active{
     outline: none;
@@ -96,14 +98,14 @@ ul li{
 }
 
 ul li a{
-    color: #2A265F;
+    color: #28223F;
     text-transform: uppercase;
     position: relative;
     padding: 10px;
 }
 
 /* Media Query */
-@media screen and (max-width: 857px){
+@media screen and (max-width: 914px){
     .menu{
         display: block;
     }
@@ -142,10 +144,6 @@ ul li a{
 
 @media screen and (max-width: 503px){
     .nav-left{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:#2A265F;
         position: relative;
     }
     #square{
@@ -175,13 +173,6 @@ ul li a{
 }
 
 @media screen and (max-width: 395px){
-    .nav-left{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color:#2A265F;
-        position: relative;
-    }
     .nav-left #role{
         display: none;
     }
@@ -195,3 +186,173 @@ ul li a{
     }
 }
 /* Media Query End   */
+
+/* Style Main */
+main{
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-flow: column;
+}
+
+/* Card Section */
+#card-section{
+    /* height: inherit; */
+    width: 40vw;
+    background-color: #fff;
+}
+
+.card-container{
+    background-color: #231E39;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+    color: #B3B8CD;
+    padding-top: 30px;
+    position: relative;
+    /* max-width: 100%; */
+    width: 300px;
+    /* height: 400px; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 150px;
+    left: 310px;
+}
+
+.card-container img{
+    width: 205px;
+    height: 205px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card-container h6{
+    margin: 5px 0;
+    text-transform: uppercase;
+}
+
+.card-container p{
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.card-container .round{
+    border-radius: 50%;
+    padding: 7px;
+    border: 2px solid  #03BFCB;
+}
+
+.card-container hr{
+    width: 70px;
+    height: 1px;
+    background-color: #ddd;
+    margin-top: 15px;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.skills{
+    background-color: #1F1A36;
+    text-align: left;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.skills ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills ul li{
+    border: 1px solid #2D2747;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+}
+
+/* Summary Section */
+/* #summary-section{
+    height: inherit;
+    width: 60vw;
+} */
+
+.summary-section-div{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    /* margin-left: 100px; */
+    /* margin-top: 110px; */
+    padding-top: 100px;
+    padding-left: 100px;
+    width: 500px;
+    color: #ffffff;
+}
+
+.summary-section-div .para1{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.summary-section-div .para2{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.summary-section-div .para3{
+    margin-top: -30px;
+}
+
+/* Button */
+.btn{
+    border: 1px solid blue; 
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 5px 5px;
+    text-align: center;
+    transition: 1min;
+    width: 150px;
+  }
+
+.btn-resume{
+    border: 2px solid  blue;
+    background-color: blue;
+    color: #ffffff;
+    position: relative;
+}
+
+.btn-resume:hover{
+    color:blue;
+    background-color: #ffffff;
+    border: 2px solid  #ffffff;
+}
+
+.btn-projects{
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    color: blue;
+    position: relative;
+    top: -59px;
+    left: 170px;
+}
+
+.btn-projects:hover{
+    border: 2px solid blue;
+    color: #ffffff;
+    background-color: blue;
+}
+/* Button End */
