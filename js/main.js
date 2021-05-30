@@ -1,5 +1,5 @@
 const menu = document.querySelector('#menu');
-const ul = document.querySelector('nav ul');
+const ul = document.querySelector('.menu-ul');
 
 // Hamburger Menu Toggle
 menu.addEventListener('click', () => {
