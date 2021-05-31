@@ -1,0 +1,165 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary: #28223F;
+    --dark: #28223F;
+    --light: #ddd;
+    --shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+/* Base Style */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+body{
+    background-color: #28223F;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* main */
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    /* flex-wrap: wrap; */
+}
+
+.heading{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    margin-left: 10px;
+}
+
+.sub-heading{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 650px;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.download-btn{
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 10px 0;
+    padding: 8px 10px;
+    text-align: center;
+    transition: 1min;
+    /* width: 11vw; */
+    /* font-size: 1.2vw; */
+    font-size: 15px;
+    width: 150px;
+    /* border: 2px solid #FEBB0B; */
+    background-color: #FEBB0B;
+    color: #28223F;
+    border-radius: 3px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.download-btn:hover{
+    background-color: #28223F;
+    color: #FEBB0B;
+}
+
+.card{
+    width: 650px;
+    margin: 20px 0;
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    background-color: #ffffff;
+    color: #28223F;
+    font-weight: 600;
+    padding: 50px;
+    position: relative;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.course{
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    /* border: 1px solid #FEBB0B; */
+    border-radius: 2px;
+    padding: 3px 8px;
+    background-color: #28223F;
+    color: #FEBB0B;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.course:hover{
+    background-color: #FEBB0B;
+    color: #28223F;
+    
+}
+
+.left-side-text{
+    text-align: left;
+    border-right: 1px solid #FEBB0B;
+}
+
+.left-side-text p{
+    margin-bottom: 10px;
+}
+
+.right-side-text{
+    text-align: center;
+}
+
+.skill-set div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-set div ul, .lang-div ul{
+    list-style: none;
+}
+
+.skill-set div ul li, .lang-div ul li{
+    margin: 15px 0;
+}
+
+.skill-set div ul li:before, .lang-div ul li:before{
+        content: "\f0c8"; /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        display: inline-block;
+        width: 1.3em; 
+        margin-left: -1.3em;
+}
+
+.lang-div {
+    margin-left: 100px;
+}
+
+
