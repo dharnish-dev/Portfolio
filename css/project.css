@@ -1,0 +1,140 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary: #28223F;
+    --dark: #28223F;
+    --light: #ddd;
+    --shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+/* Base Style */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+body{
+    background-color: #28223F;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;    
+}
+
+a{
+    text-decoration: none;
+}
+
+/* main */
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 20px;
+}
+.heading{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    margin-left: 10px;
+}
+
+.project-card{
+    width: 650px;
+    /* width: 50vw;     */
+    margin: 50px 0;
+    display: flex;
+    background-color: #ffffff;
+    color: #28223F;
+    font-weight: 300;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.card-left{
+    width: 70%;
+    margin: 40px;
+    position: relative;
+}
+
+.card-left h3{
+    margin-bottom: 20px;
+}
+
+.card-left .tech-used{
+    margin-top: 20px;
+}
+
+.card-left .rectangle{
+    width: 10px;
+    height: 50px;
+    background-color: #FEBB0B;
+    position: absolute;
+    left: -40px;
+}
+
+.card-right{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card-right img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 689px){
+    
+    .project-card{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 649px){
+    body{
+        font-size: 3vmin;
+    }
+    
+    .project-card{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-left .rectangle{
+        position: absolute;
+        left: 0vw;
+    }
+    .card-left{
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+
+    .card-right{
+        width: 100%;
+        padding: 20px;
+    }
+    .card-right img{
+        width: 30vmin;
+        height: 30vmin;
+        object-fit: cover;
+    }
+}

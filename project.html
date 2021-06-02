@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <!-- CSS Link -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/project.css">
+    <title>Project</title>
 </head>
 <body>
     <!-- Header -->
@@ -37,48 +39,48 @@
     <!-- Header End -->
     <!-- Main -->
     <main>
-        <section id="card-section">
-            <div class="card-container">
-                <div class="about">
-                    <img class="round" src="img/dharnish.jpg" alt="dharnish">
-                    <h3>Dharnish</h3>
-                    <h3>Ganeshan</h3>
-                    <br>
-                    <span class="card-line"></span>
-                    <p>Python Developer</p>
+        <section id="project-container">
+            <div class="heading">
+                <span id="square"><i class="fas fa-square"></i></span>
+                <h1>Project</h1>
+            </div>
+            <div class="project-card">
+                <div class="card-left">
+                    <div class="rectangle"></div>
+                    <h3>Sentimental Analysis On Product Review Data Using Deep Learning</h3>
+                    <p>
+                        The goal of this project is
+                        to conduct sentimental analysis on Amazon product reviews using Natural Language Processing
+                        (NLP) techniques, Bag of Words(BoW) model, Word2Vec model, and Long Short Term
+                        Memory(LSTM) neural network.
+                    </p>
+                    <p class="tech-used">
+                        Technologies Used: Python 3, Tensorflow, Keras | IDE: Jupyter Notebook
+                    </p>
                 </div>
-                <div class="skills">
-                    <div class="skills-title">
-                        <h6>Skills</h6>
-                    </div>
-                    <div class="skills-skill">
-                        <ul>
-                            <li>Python3</li>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>MySQL</li>
-                            <li>GIT</li>
-                        </ul>
-                    </div>
+                <div class="card-right">
+                    <img src="img/project-two.png" alt="analytics">
                 </div>
             </div>
-        </section>
-        <section id="info-section">
-            <div class="info-section-div">
-                <p class="para1">Hello</p>
-                <p class="para2">Here's who I am & what I do</p>
-                <div class="btn-div">
-                    <a href="resume.html" class="btn btn-resume">Resume</a>
-                    <a href="project.html" class="btn btn-projects">Projects</a>
+            <div class="project-card">
+                <div class="card-left">
+                    <div class="rectangle"></div>
+                    <h3>Weather Finder</h3>
+                    <p>
+                        The application is used to predict the state of the atmosphere for a given
+                        location.
+                    </p>
+                    <p class="tech-used">
+                        Technologies Used: HTML5, CSS3, JavaScript | API: OpenWeatherMap | IDE: Sublime Text 3
+                    </p>
                 </div>
-                <p class="para3">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-                I’m a great place for you to tell a story and let your users know a little more about you.
-                </p>
+                <div class="card-right">
+                    <img src="img/project-one.png" alt="Weather">
+                </div>
             </div>
         </section>
     </main>
-    <!-- Main End -->
+    <!-- Main End-->
     <!-- Footer -->
     <footer>
         <div class="call">

@@ -69,7 +69,13 @@ nav p{
 .nav-left #role{
     font-size: 18px;
 }
+nav a:visited {
+    color: #28223F;
+}
 
+nav a:active{
+    color: #28223F;
+}
 /* Hamburger Menu */
 .menu{
     border: 0;
