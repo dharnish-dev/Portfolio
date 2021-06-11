@@ -8,6 +8,7 @@
 
 body{
     background-color: var(--white);
+    /* background-color: var(--primary); */
     color: var(--primary);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -55,6 +56,7 @@ nav a:active{
 /* Main */
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -64,9 +66,129 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .heading h2{
     margin-left: 10px;
 }
+/* main */
 
+.contact-icon{
+    margin-top: 90px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: 900;
+    
+}
+
+.contact-icon a{
+    width: 10rem;
+    height: 10rem;
+    float: left;
+    /* margin: 0 0.5rem; */
+    margin: 0 2rem;
+    color: #353c4a;
+    border: .125rem solid #f3f3f3;
+    /* box-shadow: 0 0 8px 0 rgba(50, 50, 50, 0.15); */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 15%;
+    transition: 250ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: #f3f3f3; */
+    /* transition: all 0.15s ease; */
+
+}
+
+.contact-icon a i{
+    font-size: 50px;
+}
+
+.call:hover, :focus{
+    color: #1fab89;
+    box-shadow: 0 0 24px #1fab89;
+}
+
+.mail:hover, :focus{
+    color: #fa4659;
+    box-shadow: 0 0 24px 0 #fa4659;
+}
+
+.linked-in:hover, :focus{
+    color: #4183c4;
+    box-shadow: 0 0 24px 0 #4183c4;
+}
+
+.tooltip{
+    background-color: inherit;
+    color: inherit;
+}
+
+/* Tooltips */
+.tooltip {
+    /* width: auto; */
+    /* height: 3rem; */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0.8rem 0.5rem;
+    /* padding: 0.5rem 1rem; */
+    border-radius: 5px;
+    font-size: 0.8rem;
+    /* font-weight: bold; */
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -100%);
+    transition: all 0.3s ease;
+    z-index: 1;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+    background-color: #353c4a;
+    color: #f3f3f3;
+}
+
+/* .tooltip:after {
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    content: "";
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+}
+
+.tooltip:after{
+    border-top-color: inherit;
+} */
+
+.call:hover .tooltip, .mail:hover .tooltip, .linked-in:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -150%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) inset;
+}
+
+.call:hover .tooltip{
+    background-color: #1fab89;
+    
+}
+
+.mail:hover .tooltip{
+    background-color: #fa4659;
+}
+
+.linked-in:hover .tooltip{
+    background-color: #4183c4;
+}
