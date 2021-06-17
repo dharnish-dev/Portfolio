@@ -16,10 +16,18 @@ body{
 
 a{
     text-decoration: none;
+    overflow: hidden;
 }
 nav{
-    background-color: var(--primary);
+    background-color: var(--primary);   
     color: var(--white);
+    width: 100vw;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px;
 }
 .nav-left{
     color: var(--white);
@@ -83,8 +91,7 @@ main{
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    font-weight: 900;
-    
+    font-weight: 900;  
 }
 
 .contact-icon a{
@@ -112,17 +119,17 @@ main{
     font-size: 50px;
 }
 
-.call:hover, :focus{
+.call:hover{
     color: #1fab89;
     box-shadow: 0 0 24px #1fab89;
 }
 
-.mail:hover, :focus{
+.mail:hover{
     color: #fa4659;
     box-shadow: 0 0 24px 0 #fa4659;
 }
 
-.linked-in:hover, :focus{
+.linked-in:hover{
     color: #4183c4;
     box-shadow: 0 0 24px 0 #4183c4;
 }
@@ -191,4 +198,13 @@ main{
 
 .linked-in:hover .tooltip{
     background-color: #4183c4;
+}
+
+@media screen and (max-width: 703px){
+    .contact-icon{
+        flex-direction: column;  
+    }
+    .contact-icon a{
+        margin: 2rem 0;
+    }
 }
