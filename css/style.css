@@ -471,7 +471,7 @@ footer div p:nth-child(1) {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background-color: var(--primary);
+        background-color: transparent;
     }
     .card-container{
         position: relative;
